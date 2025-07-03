@@ -19,9 +19,9 @@ const Wallet = () => {
   return (
     <div className='px-3'>
       <h1 className='font-bold text-[18px] '>Wallet</h1>
-      <div className='flex items-center gap-10 mt-7 justify-between'>
+      <div className='flex flex-col items-center gap-10 mt-7 justify-between md:flex-row'>
 
-        <div className='relative z-10 w-[500px] h-[175px] rounded-3xl bg-cover bg-center flex flex-col px-5 py-3 gap-4 text-white ' style={{ backgroundImage: `url(${Layers})` }}>
+        <div className='relative z-10 w-[380px] h-[200px] md:w-[500px] md:h-[175px] rounded-3xl bg-cover bg-center flex flex-col px-5 py-3 gap-4 text-white ' style={{ backgroundImage: `url(${Layers})` }}>
           <div
             className="absolute inset-0 pointer-events-none "
             style={{ backgroundImage: `url(${Effect})`, backgroundRepeat: 'no-repeat', zIndex: 0 }}
@@ -33,9 +33,9 @@ const Wallet = () => {
             <button className='text-white bg-[#A24552] text-[12px] rounded-xl py-2 px-5 font-bold'>Fund Wallet</button>
           </div>
         </div>
-        <div className='flex-3 flex gap-5  w-1/2 h-[180px]'>
+        <div className='flex-3 flex flex-col md:flex-row gap-5 w-full md:w-1/2 h-[200px] md:h-[180px]'>
           <img src={Card} alt="" className='h-full' />
-          <div className='w-[130px] bg-gradient-to-t from-[#280E15] to-[#8E334A] rounded-3xl flex items-center justify-center'>
+          <div className=' w-full h-[180px] md:w-[130px] bg-gradient-to-t from-[#280E15] to-[#8E334A] rounded-3xl flex items-center justify-center'>
             <FiPlus className='text-white text-[50px]' />
           </div>
         </div>

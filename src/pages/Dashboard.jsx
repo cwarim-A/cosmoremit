@@ -8,18 +8,18 @@ import { TiPlus } from 'react-icons/ti'
 
 const Dashboard = () => {
   return (
-    <div className='flex gap-6 '>
+    <div className='flex flex-col md:flex-row gap-6 px-3 '>
       {/* Card component */}
-      <div className='w-[600px]'>
+      <div className='w-[330px] md:w-[600px]'>
         <h1 className='text-xl font-bold'>My Dashboard</h1>
         {/* Cards Div */}
-        <div className="flex flex-col mt-4 md:flex-row gap-4 w-full">
+        <div className="flex flex-3 flex-col mt-4 md:flex-row gap-4 w-full">
           <StatCard title="Total money spent"
             amount="20,000.00 AUD"
-            gradient="bg-gradient-to-r from-red-800 via-red-500 to-red-400" />
+            gradient="bg-gradient-to-r from-blue-900  to-red-900" />
           <StatCard title="Referral Bonus"
             amount="2,000.00 AUD"
-            gradient="bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500" />
+            gradient="bg-gradient-to-br from-blue-900  to-blue-500" />
         </div>
         <div className='mt-5 flex flex-col gap-2'>
           <h1>Copy your referral link:</h1>
@@ -29,7 +29,7 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      <div className='w-[430px] bg-white p-5 rounded-3xl w-full shadow-[rgba(0,0,0,0.15)_0px_5px_15px]'>
+      <div className='flex-1 md:w-[430px] bg-white p-5 rounded-3xl w-full shadow-[rgba(0,0,0,0.15)_0px_5px_15px]'>
         <div className='flex flex-col justify-center items-center gap-5'>
           <div className='flex items-center gap-3'>
             <div className=' p-2 bg-[#F300001A] rounded-full'>

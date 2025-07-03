@@ -10,11 +10,11 @@ const Layout = () => {
         <Topbar/>
         
     <div className='flex flex-1 overflow-hidden '>
-        <aside className="w-[250px] bg-white overflow-y-auto">
+        <aside className="hidden md:flex  w-[250px] bg-white overflow-y-auto ">
              <Sidebar  />
         </aside>
       
-      <main className="flex-1 overflow-y-auto px-4 py-10 bg-[#F1F1F1] rounded-xl ">   
+      <main className="flex-1 overflow-y-auto px-4 py-10 bg-[#F6F6F6] rounded-xl ">   
         <Outlet />
       </main>
     </div>

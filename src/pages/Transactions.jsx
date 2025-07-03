@@ -13,14 +13,15 @@ const Transactions = () => {
   return (
     <div className='px-3'>
       <h1 className='font-bold text-[18px] '>Transactions</h1>
-      <div className='flex items-center justify-between'>
-        <div className='flex items-center gap-5 mt-[45px]'>
+      <div className='flex flex-col items-center justify-between md:flex-row'>
+        <div className='flex flex-col items-center gap-5 mt-[45px] md:flex-row'>
           <div className='flex items-center gap-2 border border-[#CCCCCC]  bg-white rounded-3xl px-3 py-3 w-[350px]'>
             <CiSearch className='text-[20px]' />
             <input type="text" placeholder='Search by Reference,Rate,Channel...' className='w-full outline-none text-sm' />
           </div>
-          <div className="flex items-center gap-2 border border-[#CCCCCC] bg-white rounded-3xl px-3 py-3 w-[250px]">
-            <img src={Calender} alt='calender' className="text-gray-500 text-sm" />
+          <div className="flex items-center justify-between  gap-2 border border-[#CCCCCC] bg-white rounded-3xl px-3 py-3 w-full md:[250px]">
+            <div className='flex items-center gap-2'>
+              <img src={Calender} alt='calender' className="text-gray-500 text-sm" />
             <DatePicker
               selected={selectedDate}
               onChange={(date) => setSelectedDate(date)}
@@ -28,6 +29,7 @@ const Transactions = () => {
               className="outline-none text-sm w-full bg-transparent"
               calendarClassName="rounded-lg"
             />
+            </div>
             <FiChevronUp className="text-gray-500 text-sm" />
           </div>
         </div>
@@ -41,8 +43,8 @@ const Transactions = () => {
           </button>
         </div>
       </div>
-      <div className='bg-white rounded-xl w-full shadow-[rgba(0,0,0,0.15)_0px_5px_15px] mt-5'>
-            <table className="w-full table-auto">
+      <div className='bg-white overflow-x-auto rounded-xl w-full shadow-[rgba(0,0,0,0.15)_0px_5px_15px] mt-5'>
+            <table className="w-full table-auto min-w-[600px] ">
               <thead>
                 <tr className='text-[14px] text-[#00000099]'>
                   <th className='text-left py-5 px-5'>S/N</th>

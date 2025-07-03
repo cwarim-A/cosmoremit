@@ -2,7 +2,7 @@ import React from 'react'
 
 const Pagination = () => {
   return (
-    <div className='flex items-center gap-5 justify-end mt-5'>
+    <div className='flex items-center flex-col gap-5 justify-between mt-5 md:flex-row md:justify-end'>
         <button className='bg-white px-3 py-2 rounded-md'>
             Previous
         </button>
