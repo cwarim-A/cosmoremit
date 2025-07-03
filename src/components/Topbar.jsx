@@ -10,7 +10,7 @@ import { HiOutlineDocumentText } from 'react-icons/hi'
 import { motion } from 'framer-motion';
 import { LiaTimesSolid } from 'react-icons/lia'
 import Success from "../assets/done_all.png"
-import Pending from "../assets/pending.png"
+import Pending from "../assets/Pending.png"
 import Failed from "../assets/failed.png"
 import Celebration from "../assets/celebration.png"
 import Download from "../assets/download.png"
