@@ -11,7 +11,7 @@ import { motion } from 'framer-motion';
 import { LiaTimesSolid } from 'react-icons/lia'
 import Success from "../assets/done_all.png"
 import Pending from "../assets/Pending.png"
-import Failed from "../assets/failed.png"
+import Failed from "../assets/Failed.png"
 import Celebration from "../assets/celebration.png"
 import Download from "../assets/download.png"
 import Bank from "../assets/bank.png"
